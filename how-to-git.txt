@@ -1,0 +1,27 @@
+saving credentials:
+
+git config credential.helper store
+git push
+
+-------------
+creating file:
+
+> filename.txt
+git add filename.txt
+
+---------------
+updating local repo:
+
+git add -A
+
+---------------
+commiting:
+
+git commit -m "message"
+
+--------------
+pushing:
+
+git push
+
+--------------
