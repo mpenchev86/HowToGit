@@ -25,3 +25,4 @@ pushing:
 git push
 
 --------------
+renaming with just upper-case: not done yet
