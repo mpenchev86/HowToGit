@@ -26,3 +26,21 @@ git push
 
 --------------
 renaming with just upper-case: not done yet
+
+-----------------
+RENAME REMOTE BRANCH:
+
+You just have to create a new local branch with the desired name, push it to your remote, and then delete the old remote branch:
+
+$ git branch new-branch-name origin/old-branch-name
+$ git push origin --set-upstream new-branch-name
+$ git push origin :old-branch-name
+Then, to see the old branch name, each client of the repository would have to do:
+
+$ git fetch origin
+$ git remote prune origin
+NOTE: If your old branch is your main branch, you should change your main branch settings. Otherwise, when you run  $ git push origin :old-branch-name, you'll get the error "deletion of the current branch prohibited".
+
+RENAME LOCAL BRANCH:
+git branch -m new-branch-name
+---------------------------------------------
