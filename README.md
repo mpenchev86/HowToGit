@@ -1,2 +1,2 @@
-# Test
+# How to git
 none
